@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+a.navbar-brand {
+  color: #000428;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.story {
+  color: #004e92;
+  font-weight: 800;
+  font-family: Roboto, sans-serif;
+}
+
+.hero {
+  height: 230px;
+  background: #000428;
+  background: linear-gradient(to right, #000428, #004e92);
+  background: -webkit-linear-gradient(to right, #000428, #004e92);
+}
+
+.search-bar {
+  color: #fff;
+  background-color: #004e92;
+}
+
+.user-inputs {
+  width: 4.5rem;
+  outline: none;
+  color: #004e92;
+}
+
+.getDay,
+.getMonth,
+.getType {
+  margin: 0 6px;
+}
+
+.btn-submit {
+  background-color: transparent;
+}
+
+.btn-submit svg {
+  color: #fff;
+}
+
+.btn-submit svg:hover {
+  color: #000428;
+}
+
+main {
+  overflow: hidden;
+  margin: 5.5rem;
+}
+
+a.readMore {
+  color: #fff;
+  background-color: #004e92;
+}
+
+@media screen and (max-width: 678px) {
+  .search-bar {
+    width: 340px;
+  }
+  .user-inputs {
+    margin-top: 5px;
+  }
+}
