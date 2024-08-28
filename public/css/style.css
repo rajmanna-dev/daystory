@@ -1,12 +1,15 @@
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
+/* Each Elements common properties */
 * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
+/* ROOT */
 :root {
   --text-color: #fff;
   --site-color: #240046;
@@ -14,28 +17,42 @@
   --brand-font: 'Bodoni Moda', sans-serif;
 }
 
-.hidden {
-  display: none;
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
+::-webkit-scrollbar-track {
+  background-color: #3c096c;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--site-color);
+}
+
+/* MOBILE FIRST APPROACH */
+/* ERROR CONTAINER */
 .error-container p {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 10.5rem;
 }
 
+/* ROOT HTML */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
+/* BODY */
 body {
   color: var(--text-color);
   font-family: Poppins, sans-serif;
   background-color: var(--site-color);
 }
 
+/* HEADER ELEMENT */
 header .brand {
   top: 0;
   left: 0;
@@ -51,6 +68,7 @@ header .brand {
   background-color: var(--site-color);
 }
 
+/* NAVBAR */
 nav {
   left: 0;
   right: 0;
@@ -83,6 +101,11 @@ nav .nav-link:hover {
 nav .active-link {
   color: var(--text-color);
   border-bottom: 2px solid var(--text-color);
+}
+
+/* MAIN lAYOUT */
+main {
+  overflow: hidden;
 }
 
 .container {
@@ -129,6 +152,7 @@ hr {
   border-color: var(--inactive-color);
 }
 
+/* HELP PAGE CSS */
 .help-container {
   padding: 0 2rem;
   margin-top: 10.5rem;
@@ -159,6 +183,7 @@ hr {
   color: var(--inactive-color);
 }
 
+/* FOOTER LAYOUT */
 .footer-container {
   height: 10rem;
   display: flex;
@@ -190,7 +215,9 @@ hr {
   color: var(--text-color);
 }
 
+/* STYLE FOR TABLET SCREEN */
 @media screen and (min-width: 678px) {
+  /* NAVBAR */
   nav .navbar ul {
     padding: 0;
     justify-content: center;
@@ -200,6 +227,7 @@ hr {
     margin: 0 2rem;
   }
 
+  /* MAIN LAYOUT */
   .content-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -214,7 +242,9 @@ hr {
   }
 }
 
+/* STYLE FOR LAPTOP AND DESKTOP SCREEN */
 @media screen and (min-width: 1024px) {
+  /* MAIN LAYOUT */
   .container {
     padding: 0 5rem;
   }
@@ -223,10 +253,12 @@ hr {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  /* HELP PAGE */
   .help-container {
     padding: 0 6rem;
   }
 
+  /* FOOTER LAYOUT */
   .footer-container {
     padding: 0 6rem;
   }

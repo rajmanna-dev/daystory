@@ -85,6 +85,7 @@ app.get('/deaths', async (req, res) => {
   }
 });
 
+// Render help page
 app.get('/help', (req, res) => {
   res.render('help.ejs', { content: '', error: '' });
 });
